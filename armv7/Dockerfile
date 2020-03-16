@@ -5,7 +5,7 @@ RUN [ "cross-build-start" ]
 WORKDIR /
 
 COPY wheels ./wheels
-RUN pip3 install --no-cache-dir ./wheels/tensorflow-2.0.0-cp37-none-linux_armv7l.whl
+RUN pip3 install --no-cache-dir ./wheels/tensorflow-2.1.0-cp37-cp37m-linux_armv7l.whl
 RUN pip3 install --no-cache-dir ./wheels/Pillow-6.2.0-cp37-cp37m-linux_armv7l.whl
 RUN pip3 install --no-cache-dir ./wheels/numpy-1.17.4-cp37-cp37m-linux_armv7l.whl
 
